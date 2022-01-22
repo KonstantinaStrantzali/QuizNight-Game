@@ -113,3 +113,11 @@ color: #1D3461 ;
   .list-inline-item a i:hover {
     transform: translateY(2px);
   }
+  @media only screen and (max-width: 600px) {
+    .quiz-image {
+      margin-top:0%
+    }
+    .section-headings {
+      font-size: 35px;;
+    }
+  }
