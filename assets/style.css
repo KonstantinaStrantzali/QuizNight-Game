@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+.navbar {
+ background-color: #1D3461 !important;
+ max-width: 100%;     
+}
+.navbar-toggler{
+  background-color:aliceblue !important;
+}
+
+.nav-link {
+    font-size: 25px;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 500;
+    color: white !important; 
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    
+    
+}
+
+.nav-item a:hover {
+    color: #1D3461 !important;
+    background-color: blanchedalmond;
+}
+
+
+
+
+.jumbotron-container{
+    height: 40vh; 
+    align-items: center; 
+    justify-content: center;
+    
+    background-color:#FB3640; 
+    color: aliceblue;
+   
+  }
+  .section-headings{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: beige;
+    
+  }
+  .quiz-image{
+    background-color: #1D3461;
+
+}
+
+  .section-content {
+    font-family: 'Permanent Marker', cursive;
+    text-align: left;
+    font-size: 20px;
+    padding: 4px;
+    margin: px;
+    color:beige;
+    align-items: center;
+  }
+
+  
+  body{
+      background-color: #FB3640;
+      margin:0;
+  }
+  #button-section{
+    
+    align-items: center; 
+    justify-content: center;
+    padding: 2rem 0px;
+  
+    background-color:#1D3461;
+
+  }
+
+  .btn{
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color:#FB3640;
+     
+  }
+  .btn:hover{
+background-color: blanchedalmond !important;
+color: #1D3461 ;
+  }
+  .btn:active,
+  .btn:focus {
+    background-color: white;
+    color: #1D3461;
+    transform: translateY(4px);
+    border: 0;}
+
+  .social-media-section{
+    background-color: aliceblue;
+  }
+  .list-inline-item i {
+    font-size: 30px;
+    width: 40px;
+  }
+
+  .fa-facebook {
+    background-color: #3B5998;
+    color: white;
+  }
+  .fa-youtube {
+    background: white;
+    color: rgb(209, 17, 17);
+  }
+  .fa-instagram{
+    background: white ;
+    color: rgb(145, 6, 138);
+  }
+  .list-inline-item a i:hover {
+    transform: translateY(2px);
+  }
