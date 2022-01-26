@@ -8,7 +8,7 @@ let scoreCounter = document.getElementById("scoreCounter");
 let data;
 let round = 0;
 let score = 0;
-question.innerText = round +=1;
+let questionNum = 0;
 
 async function sendApiRequest(){
     let response = await fetch("https://opentdb.com/api.php?amount=10");
@@ -41,6 +41,7 @@ event.target.style.backgroundColor = isCorrect ? "green" : "red";
 setTimeout (() =>{
     event.target.style.backgroundColor = "grey"
     round++;
+    countQuestions()
     displayApiData(data)
 }, 2000);
 
@@ -48,9 +49,7 @@ setTimeout (() =>{
 
 
 
-function increaseScore(){
-    if(data.results[round].correct_answer){
-        score.innerText += 100;
-    }
-
+function countQuestions () {
+    let questionCounter = document.getElementById("questionCounter");
+     questionCounter.innerText = questionNum++;
 }
