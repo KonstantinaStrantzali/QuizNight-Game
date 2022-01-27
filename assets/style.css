@@ -95,7 +95,7 @@ color: #1D3461 ;
   }
   .list-inline-item i {
     font-size: 30px;
-    width: 40px;
+    margin:0px;
   }
 
   .fa-facebook {
@@ -113,6 +113,7 @@ color: #1D3461 ;
   .list-inline-item a i:hover {
     transform: translateY(2px);
   }
+  
   @media only screen and (max-width: 600px) {
     .quiz-image {
       margin-top:0%
@@ -121,3 +122,49 @@ color: #1D3461 ;
       font-size: 35px;;
     }
   }
+
+ /* --------------------------------------------> game page */
+
+ .counters-container{
+   font-family:'Permanent Marker', cursive ;
+   font-size: 20px;
+   color:#1D3461;
+   
+   
+ }
+ .quiz-page-headings{
+   color:#1D3461;
+   font-family:'Permanent Marker', cursive ;
+   font-size: 40px;
+ }
+
+.question-panel{
+  background-color: #FB3640;
+  color:white;
+  font-family:'Permanent Marker', cursive ;
+  height: 30vh;
+  
+}
+.answers{
+  background-color: grey;
+  color: white;
+  font-size:20px;
+  margin: 0px 10px;
+  
+  margin-bottom: 10px;
+  height:12vh;
+  padding:15px;
+}
+.quiz-game-page{
+  background-color: white;
+}
+.fa-volume-up,
+.fa-volume-mute {
+  float:left;
+  font-size: 25px;
+  padding: 10px;
+}
+#audio{
+  background-color: white;
+  border: white;
+}
