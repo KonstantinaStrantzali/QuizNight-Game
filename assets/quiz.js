@@ -89,22 +89,6 @@ function countQuestions(){
 
 
 
-/*
-var x = document.getElementById("myAudio");
-function playAudio() {
-    x.play();
-  }
 
 
-  $('#audio').click(function(){
-	var ele = $('.iconChanged');
-  if(ele.hasClass('fa-volume-up'))
-        {
-  	ele.removeClass('fa-volume-up')
-       .addClass('fa-volume-mute')
-  }else {
-  	ele.addClass('fa-volume-up')
-       .removeClass('fa-volume-mute')
-  }
-})
-*/
+  
