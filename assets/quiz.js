@@ -5,41 +5,52 @@ let answer3 = document.getElementById("option3");
 let answer4 = document.getElementById("option4");
 let quizAnswers = document.getElementsByClassName("answers");
 let scoreCounter = document.getElementById("scoreCounter");
+var audioElm = document.getElementById('myAudio'); audioElm.muted = !audioElm.muted;
+let questionTotal = document.getElementById("totalQuestions").textContent;
 let data;
 let questionCounter = document.getElementById("questionCounter");
 let round = 0;
 let score = 0;
 let questionNum = 1;
 let answerClicked = true;
-let audio = document.getElementById("audio");
-let sound = false;
 
+window.onload = sendApiRequest; 
 
-
+//get the API 
 async function sendApiRequest(){
     let response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
     data = await response.json();
     console.log(data);
-    displayApiData(data);
-   
+    
+    let getAnswers = Object.values(data.results).map( el => {
+        return {question: el.question, correct: el.correct_answer};
+    });
+    localStorage.setItem("getAnswers",JSON.stringify(getAnswers));
+    console.log(getAnswers);
+    displayApiData();
+    //data.results = the whole object
+    // results = one object
 }
-window.onload = sendApiRequest; 
 
-function displayApiData(data){
+//Display the API's data
+function displayApiData(){
     const results = data.results[round]; //data destructured 
-    
+    let all_answers = results.incorrect_answers.concat(results.correct_answer);
+    (shuffle(all_answers));
     question.innerHTML = `${results.question}`;
-    answer1.innerHTML = `${results.incorrect_answers[0]}`;
-    answer2.innerHTML = `${results.incorrect_answers[1]}`;
-    console.log(answer2);
-    answer3.innerHTML = `${results.incorrect_answers[2]}`;
-    answer4.innerHTML = `${results.correct_answer}`; 
+    answer1.innerHTML = all_answers[0];
+    answer2.innerHTML = all_answers[1];
+    answer3.innerHTML = all_answers[2];
+    answer4.innerHTML = all_answers[3];
     
-    all_answers = results.incorrect_answers.concat(results.correct_answer)
-    console.log(all_answers)
-    console.log("SHUFFLED: ", shuffle(all_answers))
+console.log(typeof Object.values(data.results));
+
 }
 
+
+
+/* Shuffle Deck
+   Fisher-Yates Shuffle found at https://javascript.info/task/shuffle#:~:text=Write%20the%20function%20shuffle(array,%2C%202%5D%20%2F%2F%20... */
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
   
@@ -57,7 +68,9 @@ function shuffle(array) {
   
     return array;
   }
-
+// for each answer when it's clicked check if the value is correct and change
+// the background color, increase the score, go to the next question
+function quizPlay() {
 [...quizAnswers].forEach((qa) => qa.addEventListener("click", function(event) {
 if(!answerClicked) return;
 answerClicked = false
@@ -71,18 +84,30 @@ setTimeout (() =>{
     
     event.target.style.backgroundColor = "grey"
     round++; 
-    displayApiData(data)
+    displayApiData();
     answerClicked = true
     countQuestions();
 }, 2000);
-if (questionTotal === questionNum){
-    return window.location.assign(`index.html`);
-} 
+
 }));
+
+}
 
 function countQuestions(){
     questionNum++
     questionCounter.innerText = questionNum;
+    if(questionNum === 10) {
+        setTimeout (() =>{
+            
+            localStorage.setItem('recentScore', score); 
+            localStorage.setItem("userAnswers", )
+            
+            
+            window.location.href = 'results.html';
+            
+        }, 5000);
+         
+    }
     
 }
 
