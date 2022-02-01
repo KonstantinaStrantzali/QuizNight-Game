@@ -15,6 +15,13 @@ let questionNum = 1;
 let answerClicked = true;
 
 window.onload = sendApiRequest; 
+quizPlay();
+
+
+$("#audio").click(function() {
+    
+    toggleAudio();
+});
 
 //get the API 
 async function sendApiRequest(){
@@ -112,6 +119,18 @@ function countQuestions(){
 }
 
 
+function toggleAudio() {
+    let myAudio = document.getElementById("myAudio");
+    const ele = $('.iconChanged');
+    console.log(ele);
+    if(ele.hasClass("fa-volume-up")){
+        myAudio.pause();
+        ele.removeClass('fa-volume-up').addClass('fa-volume-mute')
+    } else{
+        myAudio.play();
+        ele.addClass('fa-volume-up').removeClass('fa-volume-mute')
+    }
+}
 
 
 
