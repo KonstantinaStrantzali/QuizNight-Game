@@ -33,7 +33,7 @@ async function sendApiRequest(){
     });
     localStorage.setItem("getAnswers",JSON.stringify(getAnswers));
     console.log(getAnswers);
-    localStorage.setItem("userAnswers",JSON.stringify(userAnswers));
+    
     console.log(userAnswers);
     displayApiData();
     //data.results = the whole object
@@ -106,16 +106,14 @@ setTimeout (() =>{
 function countQuestions(){
     questionNum++
     questionCounter.innerText = questionNum;
-    if(questionNum === 10) {
+    if(questionNum === 3) {
         setTimeout (() =>{
             
             localStorage.setItem('recentScore', score); 
-            localStorage.setItem("userAnswers", )
-            
-            
+            localStorage.setItem("userAnswers",JSON.stringify(userAnswers));
             window.location.href = 'results.html';
             
-        }, 5000);
+        }, 2000);
          
     }
     
