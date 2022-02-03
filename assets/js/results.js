@@ -3,7 +3,13 @@ const recentScore = localStorage.getItem(`recentScore`);
 const finalScore = document.querySelector(`#quiz-finalscore`);
 finalScore.innerText = recentScore;
 // retrieve user answers 
-
+// retrieve answers
+const userAnswers = localStorage.getItem("userAnswers");
+const userChoices = JSON.parse(userAnswers);
+console.log(userChoices);
+for(let i = 0; i<userChoices.length; i++){
+    console.log(userChoices[i]);
+}
 
 //retrieve questions-correct_answers and display them
 const data = localStorage.getItem(`getAnswers`);
