@@ -134,3 +134,13 @@ function toggleAudio() {
         ele.addClass('fa-volume-up').removeClass('fa-volume-mute')
     }
 }
+let time = 60;
+let interval = setInterval(function(){
+  document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
+  time--;
+  if (time === 60 ){
+    clearInterval(interval);
+    $("#exampleModal").modal('show'); 
+  
+}
+}, 1000); 
