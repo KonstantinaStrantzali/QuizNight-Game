@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,13 +20,22 @@
     <title>Quiz Night Game</title>
 </head>
 
-<body class="quiz-game-page">
+<body>
     <header>
-        <audio id="myAudio" muted="false">
-            <source src="/assets/music.mp3" type="audio/mpeg">
-          </audio>
-        <button id ="audio"><i class="fas fa-volume-mute iconChanged"></i></button>
-        <h1 class="quiz-page-headings text-center">Quiz Night Game</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-sm-2">
+                    <audio id="myAudio" muted="false">
+                        <source src="quizmusic.mp3" type="audio/mpeg">
+                      </audio>
+                    <button id ="audio"><i class="fas fa-volume-mute iconChanged"></i></button>
+        </div>
+        <div class="col-lg-8 col-sm-10">
+            <h1 class="quiz-page-headings">Quiz Night Game</h1>
+        
+        </div>
+       </div>
+       </div>
     </header>
     <div class="counters-container">
         <div class="container-fluid">
@@ -43,7 +54,7 @@
                     <span class="d-inline d-md-none">
                         <br />
                     </span>
-                    <span id="questionCounter">0</span><span class="question-sum">/10</span>
+                    <span id="questionCounter">1</span><span class="question-sum">/10</span>
                 </p>
             </div>
             <div class="col-2 m-4">
@@ -62,15 +73,13 @@
     <section class="question-area">
         <div class="container-fluid ">
             <div class="row justify-content-center ">
-                <div class="col-xs-12 col-md-8 m-4  question-panel">
-                    <h2 class="question text-center" id ="question">Question: </h2>    
-                  <h1 class= "question-content" id="question-content"></h1>
+                <div class="col-xs-12 col-md-8 m-4  question-panel"> 
+                  <h1 class= "question-content mt-3" id="question-content"></h1>
                 </div>
             </div>
             </div>
-    </section>
-    <section class ="answer-area">
-        <div class="container-fluid mt-4">
+   
+        <div class="container-fluid mt-4 answer-area">
             <div class="row justify-content-center">
               <div class="col-md-4 col-xs-6 text-center answers" id="option1"></div>
               <div class="col-md-4 text-xs-6 text-center answers" id="option2"></div>
@@ -85,7 +94,9 @@
    
     <footer>
 
-    </footer>
+   
     <script src="/assets/js/quiz.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     </body>
+</footer>
+</html>

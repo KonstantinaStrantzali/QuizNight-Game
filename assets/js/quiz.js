@@ -89,10 +89,13 @@ let isCorrect = event.target.innerText === data.results[round].correct_answer;
 if (isCorrect) score+= 100;
 scoreCounter.innerText = score;
 event.target.style.backgroundColor = isCorrect ? "green" : "red";
+event.target.style.color="white";
+
 
 setTimeout (() =>{
     
-    event.target.style.backgroundColor = "grey"
+    event.target.style.backgroundColor = "white";
+    event.target.style.color="#1D3461";
     round++; 
     displayApiData();
     answerClicked = true
@@ -106,7 +109,7 @@ setTimeout (() =>{
 function countQuestions(){
     questionNum++
     questionCounter.innerText = questionNum;
-    if(questionNum === 3) {
+    if(questionNum === 10) {
         setTimeout (() =>{
             
             localStorage.setItem('recentScore', score); 
