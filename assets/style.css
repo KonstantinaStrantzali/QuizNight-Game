@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Permanent+Marker:200&display=swap');
 
-
+html{
+  margin: 0;
+}
 .navbar {
  background-color: #1D3461 !important;
- max-width: 100%;     
+    
 }
 .navbar-toggler{
   background-color:aliceblue !important;
@@ -192,7 +193,15 @@ color: #1D3461 ;
 
 @media only screen and (max-width: 400px) {
   .question-content {
-    font-size: 25px;
+    font-size: 30px;
   }
   
+}
+
+table {
+  background-color: white;
+}
+th, td {
+  padding: 4px;
+  border: 1px solid black;
 }
