@@ -19,16 +19,8 @@
     }
     console.log(getAnswers);
     
- 
-    const questionsDisplay = document.getElementById("questions");
-    for (let i = 0; i < getAnswers.length; i++) {
-        let displayEl = document.createElement("div");
-        displayEl.innerHTML = `On question: ${getAnswers[i].question}  the correct
-        answer is ${getAnswers[i].correct} and your answer was ${userChoices[i]}`;
-  
-  
-    };
-  
+
+  //build a table and display the data
     let myTable = document.querySelector('#table');
   
     let headers = ['Question', 'Correct Answer', 'User Choice'];
