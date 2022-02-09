@@ -19,9 +19,9 @@
     <title>Quiz Night Game</title>
 </head>
 
-<body>
+<body class="quiz-page">
     <header>
-        <div class="container-fluid">
+        <div class="container-fluid header-area">
             <div class="row">
                 <div class="col-lg-4 col-sm-2">
                     <audio id="myAudio" muted="false">
@@ -36,11 +36,12 @@
        </div>
        </div>
     </header>
+     <!-- Features section-->  
     <div class="counters-container">
         <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-2 m-4 ">
-                <p>Score:
+                <p>Score
                     <span class="d-inline d-md-none">
                         <br />
                     </span>
@@ -49,7 +50,7 @@
                 </p>
             </div>
             <div class="col-2 m-4">
-                <p> Question:
+                <p> Question
                     <span class="d-inline d-md-none">
                         <br />
                     </span>
@@ -57,7 +58,7 @@
                 </p>
             </div>
             <div class="col-2 m-4">
-                <p>Time:
+                <p>Time
                     <span class="d-inline d-md-none">
                         <br />
                     </span>
@@ -68,20 +69,21 @@
         </div>
     </div>
     </div>
-</div>
+     <!-- /Navigation Bar-->  
+ <!-- Questions section-->  
     <section class="question-area">
         <div class="container-fluid ">
             <div class="row justify-content-center ">
-                <div class="col-xs-12 col-md-8 m-4  question-panel"> 
+                <div class="col-xs-12 col-md-8 m-2 question-panel"> 
                   <h1 class= "question-content mt-3" id="question-content"></h1>
                 </div>
             </div>
             </div>
-   
-        <div class="container-fluid mt-4 answer-area">
+    <!-- Answers section-->  
+        <div class="container-fluid mt-3 answer-area">
             <div class="row justify-content-center">
               <div class="col-md-4 col-xs-6 text-center answers" id="option1"></div>
-              <div class="col-md-4 text-xs-6 text-center answers" id="option2"></div>
+              <div class="col-md-4 col-xs-6 text-center answers" id="option2"></div>
               </div>
               <div class="row justify-content-center">
               <div class="col-md-4 col-xs-6 text-center answers" id="option3"></div>
@@ -98,7 +100,7 @@
           <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
         </div>
         <div class="modal-body">
-            <h4>You run out of time</h4>
+            <h4>You ran out of time</h4>
             <p>Next time go faster</p>
         </div>
         <div class="modal-footer">
@@ -108,13 +110,11 @@
       </div>
     </div>
   </div>
-   
-    <footer>
+ <!-- End of modal-->  
 
-   
-    <script src="assets/js/quiz.js"></script>
-    <script src="assets/js/results.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    </body>
-</footer>
+<script src="assets/js/quiz.js"></script>
+<script src="assets/js/results.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</section>
+</body>
 </html>

@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300;400&display=swap');
 .navbar {
  background-color: #1D3461 !important;
 
@@ -11,7 +11,8 @@
 
 .nav-link {
     font-size: 25px;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: white !important; 
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -26,9 +27,6 @@
     color: #1D3461 !important;
     background-color: blanchedalmond;
 }
-
-
-
 
 .jumbotron-container{
     height: 40vh; 
@@ -45,28 +43,31 @@
     color: beige;
     
   }
+  .section-sub-heading{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
   .quiz-image{
     background-color: #1D3461;
 
 }
 
   .section-instructions {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     text-align: left;
     font-size: 20px;
     padding: 4px;
-    margin: px;
     color:beige;
     align-items: center;
   }
 
   
-  body{
-      background-color: #FB3640;
-      margin:0;
+  .main-page{
+    background-color: #FB3640;
+    margin:0;
   }
-  #button-section{
-    
+  #button-section{  
     align-items: center; 
     justify-content: center;
     padding: 2rem 0px;
@@ -84,6 +85,8 @@
 background-color: blanchedalmond !important;
 color: #1D3461 ;
   }
+
+  
   .btn:focus {
     background-color: white;
     outline-color: #1D3461;
@@ -125,18 +128,19 @@ color: #1D3461 ;
   }
 
  /* --------------------------------------------> game page */
-
- .header{
+ .quiz-page{
+  background-color: #1D3461;
+}
+ 
+ .header-area{
   background-color:#FB3640;
   
 }
  .counters-container{
-   font-family:'Permanent Marker', cursive ;
+   font-family: 'Roboto', sans-serif;
    font-size: 20px;
-   
-   color:white;
+    color:white;
    background-color: #1D3461 ;
-   
    
  }
  .question-area{
@@ -145,28 +149,28 @@ color: #1D3461 ;
  
  .quiz-page-headings{
    color:white;
-   font-family:'Lobster Two', cursive;
+   font-family:'Permanent Marker', cursive;
    font-weight: 700;
    font-style: italic;
    font-size: 40px;
    padding: 20px;
  }
  .question-content{
-   font-size: 35px;
+   font-size: 30px;
+   padding:10px;
  }
 .question-panel{
   background-color: #FB3640;
   color:white;
-  font-family:'Permanent Marker', cursive ;
+  font-family:'Roboto', sans-serif;
   font-size: 15px;
-  font-weight: 300;
-  
+  font-weight: 300; 
   height: 30vh;
   
 }
 .answers{
   background-color: white;
-  font-family: 'Permanent Marker', cursive ;
+  font-family: 'Roboto', sans-serif;
   color: #1D3461;
   font-size:20px;
   margin: 0px 10px;
@@ -178,12 +182,18 @@ color: #1D3461 ;
 .quiz-game-page{
   background-color: white;
 }
+.answers:hover {
+cursor: pointer;
+-webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+        transform: scale(1.02);
+}
 .fa-volume-mute,
 .fa-volume-up {
   padding: 10px;
   font-size: 25px;
   color: white;
-  width: 10px;
+  width: 30px;
 }
 
 
@@ -191,13 +201,11 @@ color: #1D3461 ;
   background-color: #FB3640;
   border: #FB3640;
 }
-.audio {
-  background-color: #1D3461 !important;
-  border: #1D3461;
-}
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 600px) {
   .question-content {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0px;
     
   }
   
