@@ -1,21 +1,23 @@
 
 .navbar {
  background-color: #1D3461 !important;
-    
+
 }
 .navbar-toggler{
+  color: #1D3461 !important;
   background-color:aliceblue !important;
+  
 }
 
 .nav-link {
     font-size: 25px;
     font-family: 'Permanent Marker', cursive;
-    font-weight: 500;
     color: white !important; 
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
+    margin-right: 20px;
     
     
 }
@@ -48,7 +50,7 @@
 
 }
 
-  .section-content {
+  .section-instructions {
     font-family: 'Permanent Marker', cursive;
     text-align: left;
     font-size: 20px;
@@ -68,7 +70,6 @@
     align-items: center; 
     justify-content: center;
     padding: 2rem 0px;
-  
     background-color:#1D3461;
 
   }
@@ -83,9 +84,9 @@
 background-color: blanchedalmond !important;
 color: #1D3461 ;
   }
-  .btn:active,
   .btn:focus {
     background-color: white;
+    outline-color: #1D3461;
     color: #1D3461;
     transform: translateY(4px);
     border: 0;}
@@ -177,18 +178,23 @@ color: #1D3461 ;
 .quiz-game-page{
   background-color: white;
 }
-.fa-volume-up,
-.fa-volume-mute {
-  float:left;
-  font-size: 25px;
+.fa-volume-mute,
+.fa-volume-up {
   padding: 10px;
+  font-size: 25px;
   color: white;
+  width: 10px;
 }
+
+
 #audio{
   background-color: #FB3640;
   border: #FB3640;
 }
-
+.audio {
+  background-color: #1D3461 !important;
+  border: #1D3461;
+}
 @media only screen and (max-width: 400px) {
   .question-content {
     font-size: 30px;
@@ -198,8 +204,8 @@ color: #1D3461 ;
 }
 @media only screen and (max-width: 800px) {
   .jumbotron-container{
-    padding: 10px;
-    height: 25vh;
+    margin-top: -30px;
+    height: 35vh;
   }
   
 }
