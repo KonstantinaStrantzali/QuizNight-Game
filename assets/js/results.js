@@ -41,20 +41,19 @@
         let cell2 = document.createElement('td');
         let cell3 = document.createElement('td');
 
-        let textNode1 = document.createTextNode(obj.question);
-        let textNode2 = document.createTextNode(obj.correct);
-        let textNode3 = document.createTextNode(userChoices[i]);
+        
+        cell1.innerHTML = obj.question;
+        cell2.innerHTML= obj.correct;
+        cell3.innerHTML = userChoices[i];
 
-        cell1.appendChild(textNode1);
-        cell2.appendChild(textNode2);
-        cell3.appendChild(textNode3);
 
         objRow.appendChild(cell1);
         objRow.appendChild(cell2);
         objRow.appendChild(cell3);
 
         table.appendChild(objRow);
-        objRow.classList.add("table-primary");
+        
     })
     
     myTable.appendChild(table);
+    myTable.classList.add("table table-striped");
