@@ -225,3 +225,7 @@ th, td {
   padding: 4px;
   border: 1px solid black;
 }
+
+.table-section {
+  background-color: #1D3461;
+}
