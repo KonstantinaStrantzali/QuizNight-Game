@@ -1,3 +1,5 @@
+//Global variables
+
 let question = document.getElementById("question-content");
 let answer1 = document.getElementById("option1");
 let answer2 = document.getElementById("option2");
@@ -13,63 +15,54 @@ let score = 0;
 let questionNum = 1;
 let answerClicked = true;
 let userAnswers=[];
-console.log(userAnswers);
 window.onload = sendApiRequest; 
 
-
-
+//activate sound
 $("#audio").click(function() {
     
     toggleAudio();
 });
-//get the API 
+
+
+//fetch API, store it in a variable using an asyncronous function and save its values to local Storage
 async function sendApiRequest(){
     let response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
     data = await response.json();
-    console.log(data);
     
     let getAnswers = Object.values(data.results).map( el => {
         return {question: el.question, correct: el.correct_answer};
     });
     localStorage.setItem("getAnswers",JSON.stringify(getAnswers));
-    console.log(getAnswers);
     
-    console.log(userAnswers);
     displayApiData();
     //data.results = the whole object
     // results = one object
 }
 
-//Display the API's data
+//Display answers on HTML buttons
 function displayApiData(){
-    const results = data.results[round]; //data destructured 
+    const results = data.results[round]; 
     let all_answers = results.incorrect_answers.concat(results.correct_answer);
+    console.log(all_answers);
     (shuffle(all_answers));
-    question.innerHTML = `${results.question}`;
+   
+    question.innerHTML = results.question;
     answer1.innerHTML = all_answers[0];
     answer2.innerHTML = all_answers[1];
     answer3.innerHTML = all_answers[2];
     answer4.innerHTML = all_answers[3];
     
-console.log(typeof Object.values(data.results));
+
 
 }
 
-
-
-/* Shuffle Deck
+/* Shuffle the answers and randomize their positions 
    Fisher-Yates Shuffle found at https://javascript.info/task/shuffle#:~:text=Write%20the%20function%20shuffle(array,%2C%202%5D%20%2F%2F%20... */
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
-  
-    // While there remain elements to shuffle...
     while (currentIndex != 0) {
-  
-      // Pick a remaining element...
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
-  
-      // And swap it with the current element.
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
@@ -105,7 +98,7 @@ setTimeout (() =>{
 }));
 
 
-// countQuestions and when its 10 go an page taking the data with you.
+// When questions reach 10 finish the game and send the results to the resutls page
 function countQuestions(){
     questionNum++
     questionCounter.innerText = questionNum;
@@ -121,7 +114,7 @@ function countQuestions(){
     }
     
 }
-
+// toggle the Audio on and off
 function toggleAudio() {
     let myAudio = document.getElementById("myAudio");
     const ele = $('.iconChanged');
@@ -134,6 +127,8 @@ function toggleAudio() {
         ele.addClass('fa-volume-up').removeClass('fa-volume-mute')
     }
 }
+
+// Run timer and when its out show the modal
 let time = 60;
 let interval = setInterval(function(){
   document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
