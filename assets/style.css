@@ -195,7 +195,10 @@ cursor: pointer;
   color: white;
   width: 30px;
 }
-
+.audio{
+ 
+  background-color: #1D3461 !important;
+}
 
 #audio{
   background-color: #FB3640;
