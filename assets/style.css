@@ -207,17 +207,33 @@ cursor: pointer;
 
 @media only screen and (max-width: 600px) {
   .question-content {
-    font-size: 25px;
-    padding: 0px;
+    font-size: 20px;
+    margin-top: 5px;
+   
     
   }
-  
+  .counters-container {
+    height: 10vh;
+    margin-bottom: 1rem;
+  }
+  .question-panel{
+    height: 17vh;
+  }
+  .answers{
+    height: 7vh;
+    padding: 12px;
+    font-size: 20px;
+  }
+  .html {
+    height: 20vh;
+  }
 }
 @media only screen and (max-width: 800px) {
   .jumbotron-container{
     margin-top: -30px;
     height: 35vh;
   }
+  
   
 }
 
