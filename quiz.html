@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-2">
                     <audio id="myAudio" muted="false">
-                        <source src="/assets/music.mp3" type="audio/mpeg">
+                        <source src="assets/music.mp3" type="audio/mpeg">
                       </audio>
                     <button id ="audio"><i class="fas fa-volume-mute iconChanged"></i></button>
         </div>
@@ -74,7 +74,7 @@
         <div class="container-fluid ">
             <div class="row justify-content-center ">
                 <div class="col-xs-12 col-md-8 m-2 question-panel"> 
-                  <h1 class= "question-content mt-ml-3" id="question-content"></h1>
+                  <h1 class= "question-content mt-lg-5" id="question-content"></h1>
                 </div>
             </div>
             </div>
@@ -95,16 +95,16 @@
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
+        
           <h5 class="modal-title" id="exampleModalLabel">Game Over</h5>
-        </div>
+        
         <div class="modal-body">
-            <h4>You ran out of time</h4>
-            <p>Next time go faster</p>
+            <h4 class="text-center">Oh no! You ran out of time</h4>
+           
         </div>
-        <div class="modal-footer">
-            <a class="btn btn-secondary btn-lg" href="quiz.html">Play Again</a>
-          <button type="button" class="btn btn-primary">Home</button>
+        <div class="modal-footer text-center">
+            <a class="btn btn-secondary btn-lg modal-button" href="quiz.html">Try Again</a>
+            <a class="btn btn-secondary btn-lg modal-button" href="index.html">Home</a>
         </div>
       </div>
     </div>
