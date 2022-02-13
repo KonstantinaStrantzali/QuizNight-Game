@@ -32,8 +32,8 @@
   background-color: #294A58ff!important;
 }
 
-.jumbotron-container{
-    height: 40vh; 
+.banner-container{
+    
     align-items: center; 
     justify-content: center;
     
@@ -204,28 +204,47 @@ cursor: pointer;
   border: #CE3854ff;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) {
   .question-content {
     font-size: 20px;
     margin-top: 5px;
    
-    
   }
   .counters-container {
-    height: 10vh;
+    height: 15vh;
     margin-bottom: 1rem;
   }
   .question-panel{
-    height: 19vh;
+    height: 27vh;
   }
   .answers{
-    height: 8vh;
+    height: 12vh;
     padding: 10px;
     font-size: 20px;
   }
   
 }
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 600px) {
+  .question-content {
+    font-size: 20px;
+    margin-top: 5px;
+   
+  }
+  .counters-container {
+    height: 15vh;
+    margin-bottom: 1rem;
+  }
+  .question-panel{
+    height: 27vh;
+  }
+  .answers{
+    height: 12vh;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+}
+@media only screen and (max-width: 995px) {
   .jumbotron-container{
     margin-top: -30px;
     height: 35vh;
@@ -252,6 +271,7 @@ cursor: pointer;
   
   
 }
+
 .modal-title{
   text-align: center;
   font-size: 30px;
