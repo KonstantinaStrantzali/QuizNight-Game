@@ -204,73 +204,7 @@ cursor: pointer;
   border: #CE3854ff;
 }
 
-@media only screen and (min-width: 320px) {
-  .question-content {
-    font-size: 20px;
-    margin-top: 5px;
-   
-  }
-  .counters-container {
-    height: 15vh;
-    margin-bottom: 1rem;
-  }
-  .question-panel{
-    height: 27vh;
-  }
-  .answers{
-    height: 12vh;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-}
-@media only screen and (max-width: 600px) {
-  .question-content {
-    font-size: 20px;
-    margin-top: 5px;
-   
-  }
-  .counters-container {
-    height: 15vh;
-    margin-bottom: 1rem;
-  }
-  .question-panel{
-    height: 27vh;
-  }
-  .answers{
-    height: 12vh;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-}
-@media only screen and (max-width: 995px) {
-  .jumbotron-container{
-    margin-top: -30px;
-    height: 35vh;
-  }
-  .question-content {
-    font-size: 20px;
-    margin-top: 15px;
-   
-    
-  }
-  .counters-container {
-    height: 10vh;
-  
-  }
-  .question-panel{
-    height: 15vh;
-  }
-  .answers{
-    height: 7vh;
-    padding: 10px;
-    font-size: 20px;
-  }
-  
-  
-  
-}
+
 
 .modal-title{
   text-align: center;
@@ -283,15 +217,95 @@ cursor: pointer;
 .modal-button{
 margin: 0px 25px;
 }
-
-table {
+/* --------------------------------------------> quiz page */
+.result-section{
+  font-family:'Permanent Marker', cursive;
+  background-color: #CE3854ff;
+  color:white;
+  height:5vn;
+  margin-top: -10;
+}
+.results-page{
   background-color: white;
 }
-th, td {
-  padding: 4px;
-  border: 1px solid black;
+
+table {
+  border: 4px solid #CE3854ff;
+  background-color: #294A58ff;
+  text-align: center;
+  color:white;
+  
+}
+table td, table  th {
+  border: 1px solid #294A58ff;
+  padding: 5px 2px;
+}
+table td {
+  font-size: 15px;
+  color: #FFFFFF;
+}
+table  tr:nth-child(even) {
+  background: #CE3854ff;
+
 }
 
-.table-section {
-  background-color: #1D3461;
+@media only screen and (max-width: 800px){
+  .question-content {
+    font-size: 20px;
+    margin-top: 5px;
+   
+  }
+  .counters-container {
+    height: 15vh;
+    margin-bottom: 1rem;
+  }
+  .question-panel{
+    height: 27vh;
+  }
+  .answers{
+    height: 12vh;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
 }
+@media only screen and (min-width: 800px){
+  .question-content {
+    font-size: 20px;
+    margin-top: 15px;
+   
+  }
+  .counters-container {
+    height: 13vh;
+    margin-bottom: 1rem;
+  }
+  .question-panel{
+    height: 15vh;
+  }
+  .answers{
+    height: 7vh;
+    padding: auto;
+    font-size: 20px;
+  }
+  
+}
+@media only screen and (min-width: 1200px){
+  .question-content {
+    font-size: 20px;
+    margin-top: 5px;
+   
+  }
+  .counters-container {
+    height: 15vh;
+    margin-bottom: 1rem;
+  }
+  .question-panel{
+    height: 27vh;
+  }
+  .answers{
+    height: 10vh;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
