@@ -1,21 +1,38 @@
 //Global variables
 
-let question = document.getElementById("question-content");
-let answer1 = document.getElementById("option1");
-let answer2 = document.getElementById("option2");
-let answer3 = document.getElementById("option3");
-let answer4 = document.getElementById("option4");
-let quizAnswers = document.getElementsByClassName("answers");
-let scoreCounter = document.getElementById("scoreCounter");
-var audioElm = document.getElementById('myAudio'); audioElm.muted = !audioElm.muted;
+const question = document.getElementById("question-content");
+const answer1 = document.getElementById("option1");
+const answer2 = document.getElementById("option2");
+const answer3 = document.getElementById("option3");
+const answer4 = document.getElementById("option4");
+const quizAnswers = document.getElementsByClassName("answers");
+const scoreCounter = document.getElementById("scoreCounter");
+const audioElm = document.getElementById('myAudio'); 
+audioElm.muted = !audioElm.muted;
+const questionCounter = document.getElementById("questionCounter");
 let data;
-let questionCounter = document.getElementById("questionCounter");
 let round = 0;
 let score = 0;
 let questionNum = 1;
 let answerClicked = true;
 let userAnswers=[];
+
 window.onload = sendApiRequest; 
+
+[...quizAnswers].forEach((qa) => qa.addEventListener("click", clickButtonsListener));
+
+// Run timer and when its out show the modal
+let time = 60;
+let interval = setInterval(function() {
+        document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
+        time--;
+        if (time === 60 ){
+        clearInterval(interval);
+        $("#exampleModal").modal('show');  
+        }
+    }, 
+    1000
+); 
 
 //activate sound
 $("#audio").click(function() {
@@ -72,33 +89,36 @@ function shuffle(array) {
 // for each answer when it's clicked check if the value is correct and change
 // the background color, increase the score, go to the next question
 
-[...quizAnswers].forEach((qa) => qa.addEventListener("click", function(event) {
-if(!answerClicked) return;
-answerClicked = false
- let userChoice = event.target.innerText;
- userAnswers.push(userChoice);
- console.log(userAnswers);
-let isCorrect = event.target.innerText === data.results[round].correct_answer;
-if (isCorrect) score+= 100;
-scoreCounter.innerText = score;
-event.target.style.backgroundColor = isCorrect ? "green" : "red";
-event.target.style.color="white";
 
 
-setTimeout (() =>{
+function clickButtonsListener(event) {
+    if(!answerClicked) {
+        return;
+    }
+    answerClicked = false;
+    let userChoice = event.target.innerText;
+    userAnswers.push(userChoice);
+    console.log(userAnswers);
+    let isCorrect = event.target.innerText === data.results[round].correct_answer;
+    if (isCorrect) score+= 100;
+    scoreCounter.innerText = score;
+    event.target.style.backgroundColor = isCorrect ? "green" : "red";
+    event.target.style.color="white";
     
-    event.target.style.backgroundColor = "white";
-    event.target.style.color="#1D3461";
-    round++; 
-    displayApiData();
-    answerClicked = true
-    countQuestions();
-}, 2000);
+    
+    setTimeout (() =>{
+        
+        event.target.style.backgroundColor = "white";
+        event.target.style.color="#1D3461";
+        round++; 
+        displayApiData();
+        answerClicked = true
+        countQuestions();
+    }, 2000);
+    
+}
 
-}));
-
-
-// When questions reach 10 finish the game and send the results to the resutls page
+// When questions get to 10 finish the game and send the results to the results page
 function countQuestions(){
     questionNum++
     questionCounter.innerText = questionNum;
@@ -128,14 +148,3 @@ function toggleAudio() {
     }
 }
 
-// Run timer and when its out show the modal
-let time = 60;
-let interval = setInterval(function(){
-  document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
-  time--;
-  if (time === 60 ){
-    clearInterval(interval);
-    $("#exampleModal").modal('show'); 
-  
-}
-}, 1000); 
