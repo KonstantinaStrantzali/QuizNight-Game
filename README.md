@@ -102,15 +102,49 @@ The specific requirements and the fuctionality the game will offer is that the u
 
 - Start a game.
 - Read the instructions of the game.
-- Mute and unmute the sound effects.
 - Read the questions.
 - Select only one answer.
 - Instantly receive the correct or incorrect result with a visual response of the buttons.
 - Be updated for the score and the number of questions are left.
 - See how much time is left.
-- See all the questions, the correct answers and the user's choices at the end of the game.
 - Restart the game.
 - Navigate easily through the pages.
 
 <br>
+
+### 3 Structure Plane
+
+After doing some research and visiting other quiz game websites, some new user needs were identified and some new features were chosen to apply. At this point the users should be able to:
+
+- See all the questions, the correct answers and the choices they made at the end of the game.
+- Mute and unmute the sound effects.
+- See a 'game over' message when they run out of time and be able to choose if they want to try again or return back to the home page.
+- See the score they achieved.
+
+### Features
+
+### Existing Features
+
+- Home Page has a Navbar, the links link to the Instructions section and Play Now Buttons which start the game once they pressed. The navigation bar is responsive across different screens and resolutions. Navbar changes to hamburger menu for small screen sizes.
+- A favicon, with the logo of the website displayed on the web brower's tab, allows the user to identify the website by sight.
+- A large, responsive, quiz themed image displayed on the home page and make the user immediately understands the Quiz logo.
+- The colors of the website perfectly match with the logo image on the home page.
+- The questions are showed to the users after calling the Open Trivia API and they are always different.
+- Selected buttons turn to red color when the answer is incorrect and to green color when the answer is correct.
+- Correct answers award 100 points and directly increase the score.
+- A one-minute countdown timer is displayed while the user answers the question.
+- Game Over modal appears when the time run out.
+- The number of remaining questions is updated each time the user goes to the next question.
+- Users are able to see their final score at the end as well as all the questions answered and the results.
+- Mute and unmute icons allows the user to turn off-on, game sound effect.
+
+### Features to be implemeneted in the Future
+- Further levels of increasing difficulty.
+- Further question categories.
+- A themed playing environment that changes depending question category.
+
+<br>
+
+##### back to [top](#table-of-contents)
+---
 
