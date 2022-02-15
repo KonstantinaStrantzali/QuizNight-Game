@@ -147,4 +147,35 @@ After doing some research and visiting other quiz game websites, some new user n
 
 ##### back to [top](#table-of-contents)
 ---
+### 4 Skeleton Plane
+
+[Balsamiq](https://balsamiq.com/), is the UI wireframing tool that was used to create wireframes for each site page as it would appear on different screens such as desktop, mobile and ipad.
+
+#### Wireframes
+### Home Page
+
+The home page remained exactly the same as designed in the Wireframes for all the screen sizes, desktop, mobile and ipad. 
+
+[Desktop Home Page](documentation/wireframes/mainPage-desktop-mockup.png)
+[Mobile Home Page](documentation/wireframes/homePage-mobile-mockup.png)
+[Ipad Home Page](documentation/wireframes/mainPage-ipad-mockup.png)
+
+### Quiz Game Page
+Quiz Game Page remained relatively the same, apart of the answers button layout on mobile and ipad viewports which changed to full width on the screen's size.
+[Desktop Quiz Page](documentation/wireframes/gamePage-desktop-mockup.png)
+[Mobile Quiz Page](documentation/wireframes/gamePage-mobile-mockup.png)
+[Ipad Quiz Page](documentation/wireframes/gamePage-ipad-mockup.png)
+
+### Results Page
+
+Results remained exactly the way designed in the Wireframes.
+[Desktop Results Page](documentation/wireframes/resultsPage-desktop-mockup.png)
+[Mobile Results Page](documentation/wireframes/resultsPage-mobile-mockup.png)
+[Ipad Results Page](documentation/wireframes/resultsPage-ipad-mockup.png)
+
+<br>
+
+##### back to [top](#table-of-contents)
+---
+
 
