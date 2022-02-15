@@ -195,5 +195,23 @@ Results remained exactly the way designed in the Wireframes.
 - [Font Awesome](https://fontawesome.com/)
     - Font Awesome provided the icons for Social media on Footer as well as the mute and unmute sound icons.
 - [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
-    - Primary method of testing, debbuging and fixing issues.
+    - Primary method for testing, debbuging and fixing issues.
+- [Coolors](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). 
+    - Used to find a suitable colour scheme for the site.
+- [ZapSplat]
+   - Used to search for the sound effect of the project.
+- [Github](https://github.com/)
+    - Used to to host the deployed site.
+- [Git](https://git-scm.com/)
+    - Version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+- [Gitpod](https://gitpod.io)
+    -  The online Development Enviroment used to build the project. 
+- [Balsamiq](https://balsamiq.com/)
+    - Used to create the wireframes for the project.
+- [HTML Validator](https://validator.w3.org/)
+    - Used to validate HTML from errors and warnings.
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - Used to validate CSS from erros and warnings. 
+- [JavaScript Validator](https://jshint.com/)
+    - Used to detect errors, bugs and problems in Javascript.
 
