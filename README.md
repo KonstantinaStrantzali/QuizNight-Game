@@ -156,26 +156,44 @@ After doing some research and visiting other quiz game websites, some new user n
 
 The home page remained exactly the same as designed in the Wireframes for all the screen sizes, desktop, mobile and ipad. 
 
-[Desktop Home Page](documentation/wireframes/mainPage-desktop-mockup.png)
-[Mobile Home Page](documentation/wireframes/homePage-mobile-mockup.png)
-[Ipad Home Page](documentation/wireframes/mainPage-ipad-mockup.png)
+- [Desktop Home Page](documentation/wireframes/mainPage-deskotop-mockup.png)
+- [Mobile Home Page](documentation/wireframes/homePage-mobile-mockup.png)
+- [Ipad Home Page](documentation/wireframes/mainPage-ipad-mockup.png)
 
 ### Quiz Game Page
 Quiz Game Page remained relatively the same, apart of the answers button layout on mobile and ipad viewports which changed to full width on the screen's size.
-[Desktop Quiz Page](documentation/wireframes/gamePage-desktop-mockup.png)
-[Mobile Quiz Page](documentation/wireframes/gamePage-mobile-mockup.png)
-[Ipad Quiz Page](documentation/wireframes/gamePage-ipad-mockup.png)
+- [Desktop Quiz Page](documentation/wireframes/gamePage-deskotop-mockup.png)
+- [Mobile Quiz Page](documentation/wireframes/gamePage-mobile-mockup.png)
+- [Ipad Quiz Page](documentation/wireframes/gamePage-ipad-mockup.png)
 
 ### Results Page
 
 Results remained exactly the way designed in the Wireframes.
-[Desktop Results Page](documentation/wireframes/resultsPage-desktop-mockup.png)
-[Mobile Results Page](documentation/wireframes/resultsPage-mobile-mockup.png)
-[Ipad Results Page](documentation/wireframes/resultsPage-ipad-mockup.png)
+- [Desktop Results Page](documentation/wireframes/resultsPage-desktop-mockup.png)
+- [Mobile Results Page](documentation/wireframes/resultsPage-mobile-mockup.png)
+- [Ipad Results Page](documentation/wireframes/resultsPage-ipad-mockup.png)
 
 <br>
 
 ##### back to [top](#table-of-contents)
 ---
 
+## **Technologies Used**
+
+- [HTML](https://www.w3schools.com/html/)
+    - Used as the basic building block for all the pages of the project.
+- [CSS](https://www.w3schools.com/css/)
+    - Used to Style all the web content across the project.
+- [JavaScript](https://www.javascript.com/)
+    - Used as the main programming language to manipulate HTML dom and create the dynamic, interactive elements of the website.
+- [Bootstrap](https://getbootstrap.com/)
+    - Used as main framework to structure the website layout and ensure that it was responsive on all devices
+- [jQuery](https://jquery.com/)
+    - Used only for toggling sound effect.
+- [Google Fonts](https://fonts.google.com/)
+    - Permanent Marker and Roboto the 2 main fonts of the project were found from Google Fonts.
+- [Font Awesome](https://fontawesome.com/)
+    - Font Awesome provided the icons for Social media on Footer as well as the mute and unmute sound icons.
+- [Google Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
+    - Primary method of testing, debbuging and fixing issues.
 
