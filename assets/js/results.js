@@ -42,7 +42,12 @@
         cell2.innerHTML= obj.correct;
         cell3.innerHTML = userChoices[i];
 
-
+        if (cell2.innerHTML !== cell3.innerHTML ){
+            cell3.style.background = "#CE3854ff"
+        } else {
+            cell3.style.background = "green"
+        }
+        
         objRow.appendChild(cell1);
         objRow.appendChild(cell2);
         objRow.appendChild(cell3);

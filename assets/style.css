@@ -237,16 +237,17 @@ table {
   
 }
 table td, table  th {
-  border: 1px solid #294A58ff;
+  border: 1px solid white;
   padding: 5px 2px;
 }
 table td {
   font-size: 15px;
   color: #FFFFFF;
 }
-table  tr:nth-child(even) {
-  background: #CE3854ff;
 
+#button-results{
+  color:white !important;
+  background-color:#294A58ff !important;
 }
 
 @media only screen and (max-width: 800px){
@@ -291,7 +292,7 @@ table  tr:nth-child(even) {
 }
 @media only screen and (min-width: 1200px){
   .question-content {
-    font-size: 20px;
+    font-size: 23px;
     margin-top: 5px;
    
   }
