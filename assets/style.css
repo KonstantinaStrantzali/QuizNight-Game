@@ -263,7 +263,7 @@ table  tr:nth-child(even) {
     height: 27vh;
   }
   .answers{
-    height: 12vh;
+    height: 10vh;
     padding: 10px;
     font-size: 20px;
   }

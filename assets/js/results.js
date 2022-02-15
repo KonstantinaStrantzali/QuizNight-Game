@@ -6,10 +6,6 @@
     const userAnswers = localStorage.getItem("userAnswers");
     const userChoices = JSON.parse(userAnswers);
   
-    for (let i = 0; i < userChoices.length; i++) {
-        console.log(typeof userChoices);
-    }
-  
   
     //retrieve questions-correct_answers and display them
     const data = localStorage.getItem(`getAnswers`);
