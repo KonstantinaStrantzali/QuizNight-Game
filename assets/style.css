@@ -160,13 +160,13 @@ color:#294A58ff ;
  .question-content{
    font-size: 30px;
    padding:10px;
+   font-weight: 400; 
  }
 .question-panel{
   background-color: #CE3854ff;
   color:#F6F3E8ff;
   font-family:'Roboto', sans-serif;
   font-size: 15px;
-  font-weight: 300; 
   height: 30vh;
   
 }
@@ -217,13 +217,13 @@ cursor: pointer;
 .modal-button{
 margin: 0px 25px;
 }
-/* --------------------------------------------> quiz page */
+/* --------------------------------------------> results page */
 .result-section{
   font-family:'Permanent Marker', cursive;
   background-color: #CE3854ff;
   color:#F6F3E8ff;
-  height:5vn;
-  margin-top: -10;
+  height:5vh;
+  margin-top: -10px;
 }
 .results-page{
   background-color: #F6F3E8ff;
@@ -277,15 +277,15 @@ table td {
    
   }
   .counters-container {
-    height: 13vh;
-    margin-bottom: 1rem;
+    height: 10vh;
+    
   }
   .question-panel{
     height: 15vh;
+    
   }
   .answers{
     height: 7vh;
-    padding: auto;
     font-size: 20px;
   }
   
