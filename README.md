@@ -88,7 +88,7 @@ As the owner of the Quiz Night Game:
 ## User Centered Design
 ### 1 Strategy Plane
 
-The creation of User Stories influenced the User Centered Design process as many decisions were made regarding the game's layout, features and design.
+The creation of User Stories influenced the User Centered Design process, as many decisions were made regarding the game's layout, features and design.
 The main goal of the app game is to provide users with a fun, enjoyable and engaging game experience. The target audience of the game are fan of quizzes of any adult age, who want to have fun playing an entertaining game while exercising their brain.
 
 The design of the site has been made on classic quiz format, by simply displaying the questions and answers and vivid colors have been choosen to satisfy the user's fun mood.
@@ -161,7 +161,7 @@ The home page remained exactly the same as designed in the Wireframes for all th
 - [Ipad Home Page](documentation/wireframes/mainPage-ipad-mockup.png)
 
 ### Quiz Game Page
-Quiz Game Page remained relatively the same, apart of the answers button layout on mobile and ipad viewports which changed to full width on the screen's size.
+Quiz Game Page remained relatively the same, apart of the answers button layout on mobile and ipad viewports which changed to full width on the screen size. A new modal feature added when the timer run out, which allows the user to return back home or play again.
 - [Desktop Quiz Page](documentation/wireframes/gamePage-deskotop-mockup.png)
 - [Mobile Quiz Page](documentation/wireframes/gamePage-mobile-mockup.png)
 - [Ipad Quiz Page](documentation/wireframes/gamePage-ipad-mockup.png)
@@ -177,6 +177,24 @@ Results remained exactly the way designed in the Wireframes.
 
 ##### back to [top](#table-of-contents)
 ---
+
+### 5 Surface Plane
+
+#### Design
+
+#### Colour Scheme
+
+![alt text](documentation/assets/logo.png)
+
+The colour scheme of the website was chosen by uploading Quiz Night Game image to 
+[coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). Using the color picker, the hexidecimal equivalent colours of the image were identified and chosed for the project.
+At the beginning a different colour pallete chosed but going further with the project it looked very shouting and loud color schemed and changed wit
+![alt text](documentation/pallete-image.png)
+
+#### Typography
+*'Permanent Marker'* was chosen as the main heading font, as it's engaging and fun and can stand out in contrast to second font family used across the project. 
+<br>
+In order to create a visual unity between headings and titles and the rest content, *Roboto* was chosen for the text used within the body of the site. This font matches with the content of the project as it is modern, very easy on the eyes and simple to read.
 
 ## **Technologies Used**
 
