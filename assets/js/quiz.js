@@ -26,7 +26,7 @@ let time = 60;
 let interval = setInterval(function() {
         document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
         time--;
-        if (time === 0 ){
+        if (time === 60 ){
         clearInterval(interval);
         $("#exampleModal").modal('show');  
         }
@@ -36,8 +36,7 @@ let interval = setInterval(function() {
 
 //activate sound
 $("#audio").click(function() {
-    
-    toggleAudio();
+      toggleAudio();
 });
 
 
@@ -51,26 +50,19 @@ async function sendApiRequest(){
     });
     localStorage.setItem("getAnswers",JSON.stringify(getAnswers));
     
-    displayApiData();
-    //data.results = the whole object
-    // results = one object
+    displayApiData();  
 }
 
 //Display answers on HTML buttons
 function displayApiData(){
     const results = data.results[round]; 
     let all_answers = results.incorrect_answers.concat(results.correct_answer);
-    console.log(all_answers);
     (shuffle(all_answers));
-   
     question.innerHTML = results.question;
     answer1.innerHTML = all_answers[0];
     answer2.innerHTML = all_answers[1];
     answer3.innerHTML = all_answers[2];
     answer4.innerHTML = all_answers[3];
-    
-
-
 }
 
 /* Shuffle the answers and randomize their positions 
@@ -104,8 +96,7 @@ function clickButtonsListener(event) {
     scoreCounter.innerText = score;
     event.target.style.backgroundColor = isCorrect ? "green" : "red";
     event.target.style.color="white";
-    
-    
+      
     setTimeout (() =>{
         
         event.target.style.backgroundColor = "white";
@@ -114,8 +105,7 @@ function clickButtonsListener(event) {
         displayApiData();
         answerClicked = true
         countQuestions();
-    }, 2000);
-    
+    }, 2000);    
 }
 
 // When questions get to 10 finish the game and send the results to the results page
@@ -129,10 +119,8 @@ function countQuestions(){
             localStorage.setItem("userAnswers",JSON.stringify(userAnswers));
             window.location.href = 'results.html';
             
-        }, 2000);
-         
-    }
-    
+        }, 2000);         
+    }   
 }
 // toggle the Audio on and off
 function toggleAudio() {
