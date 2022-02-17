@@ -22,11 +22,12 @@ window.onload = sendApiRequest;
 [...quizAnswers].forEach((qa) => qa.addEventListener("click", clickButtonsListener));
 
 // Run timer and when its out show the modal
-let time = 60;
+let time = 90;
 let interval = setInterval(function() {
-        document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
+    document.getElementById('timeCounter').innerHTML = `${String(Math.trunc(time / 60)).padStart(2,0)}:${String(time % 60).padStart(2,0)}`;
+        //document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
         time--;
-        if (time === 60 ){
+        if (time === 0){
         clearInterval(interval);
         $("#exampleModal").modal('show');  
         }
@@ -90,7 +91,6 @@ function clickButtonsListener(event) {
     answerClicked = false;
     let userChoice = event.target.innerText;
     userAnswers.push(userChoice);
-    console.log(userAnswers);
     let isCorrect = event.target.innerText === data.results[round].correct_answer;
     if (isCorrect) score+= 100;
     scoreCounter.innerText = score;

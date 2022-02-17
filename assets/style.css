@@ -249,7 +249,7 @@ table td {
   color:#F6F3E8ff!important;
   background-color:#294A58ff !important;
 }
-
+/* --------------------------------------------> media queries */
 @media only screen and (max-width: 800px){
   .question-content {
     font-size: 20px;
@@ -258,6 +258,7 @@ table td {
   }
   .counters-container {
     height: 13vh;
+    font-size: 17px;
     margin-bottom: 1rem;
   }
   .question-panel{
