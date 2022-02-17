@@ -29,17 +29,15 @@ Click <a href="">here</a> to play the game online.
     - [5) The Surface Plane](#5-surface-plane) 
         - [Design](#design)
         - [Colour Scheme](#colour-scheme)
-        - [Icons](#icons)
         - [Typography](#typography)
-3. [**Development**](#development)
-4. [**Technologies Used**](#technologies-used)
-5. [**Testing**](#testing)
+3. [**Technologies Used**](#technologies-used)
+4. [**Testing**](#testing)
     - [Performance](#performance)
     - [Responsiveness](#responsiveness)
     - [Tested User Stories](#tested-user-stories)
     - [Bugs](#bugs)
-6. [**Deployment**](#deployment)
-7. [**Credits**](#credits)
+5. [**Deployment**](#deployment)
+6. [**Credits**](#credits)
     - [Content](#content)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
@@ -188,13 +186,16 @@ Results remained exactly the way designed in the Wireframes.
 
 The colour scheme of the website was chosen by uploading Quiz Night Game image to 
 [coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). Using the color picker, the hexidecimal equivalent colours of the image were identified and chosed for the project.
-At the beginning a different colour pallete chosed but going further with the project it looked very shouting and loud color schemed and changed wit
+At the beginning a different colour pallete chosed but going further with the project it looked very shouting and loud color schemed thus it changed.
 ![alt text](documentation/pallete-image.png)
 
 #### Typography
 *'Permanent Marker'* was chosen as the main heading font, as it's engaging and fun and can stand out in contrast to second font family used across the project. 
 <br>
 In order to create a visual unity between headings and titles and the rest content, *Roboto* was chosen for the text used within the body of the site. This font matches with the content of the project as it is modern, very easy on the eyes and simple to read.
+
+Overall the project is responsive across different resolutions. I used CSS media queries to make fonts smaller for mobile and ipad devices and to keep all the content on a single page, so the user doesn't looses focus due to need to scroll.
+Also I used Bootstrap as the main framework to keep the project responsive.
 
 ## **Technologies Used**
 
@@ -232,4 +233,47 @@ In order to create a visual unity between headings and titles and the rest conte
     - Used to validate CSS from erros and warnings. 
 - [JavaScript Validator](https://jshint.com/)
     - Used to detect errors, bugs and problems in Javascript.
+- * [The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
 
+
+## Testing
+Code was checked by [W3C Markup Validation Service](https://validator.w3.org/) and ensured that the website contains valid HTML. As a result of this process the site has no HTML erros.
+
+  <img src="documentation/validation/home-page-HTML-Validation.png"/>
+  
+- [View quiz-page Validation results](documentation/validation/quiz-page-HTML-validation.png)
+- [View results-page Validation results](documentation/validation/results-HTML-validation.png)
+  
+
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) checked CSS code and tested how valid code contained. As a result of this process the all the bugs fixed and the file returned no erros.
+
+ <img src="documentation/validation/CSS-validation.png"/>
+
+To test the validity of the JavaScript  I used [JSHint](jshint.com).
+When I first parsed my code through JShint came with many errors. Most of them were corrected with the use of /*jshint esversion: 6 */  and /*jshint esversion: 8 */ as well as /*globals $:false */ for jQuery dollar sign. Also I had many missing semi-colons and syntactical errors.
+<img src="documentation/validation/quiz.js-JHint-results.png"/>
+
+-[View results.js Validation](documentation/validation/JSHint-resutls.png).
+<br> 
+Another bug that took me a long time to fix was that the API data was not displaying properly, as some specific characters did not appear to be recognized. As you can see in the example below, in question 6 there are &#039:s characters that replace the apostrophe ('). After a lot of research, I discovered that I had to display the data using .innerHTML which allows everything to be read and replaced in a given DOM component instead of the .createTextNode I used in the beginning.
+
+<img src="documentation/validation/javascript-bug.png"/>
+
+<br>
+##### back to [top](#table-of-contents)
+---
+
+### Performance
+
+The website was tested using the [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Lighthouse test. 
+Initially the site received a 90% rating on performance, due to the size of the images and 89% on accessibility due to inaccessible button names and non discernible names of the links.
+<img src="documentation/testing/first-lighthouse-score.png"/>
+
+New aria-labels added to buttons and link so they clearly describe the action, image was compressed using an online image compressor site, [Optimizilla](https://imagecompressor.com) and then uploaded to the site. As a result, the subsequent test results showed marked improvement.
+
+<img src="documentation/testing/second-lighthouse-score.png"/>
+
+##### back to [top](#table-of-contents)
+---
+
+### Responsiveness
