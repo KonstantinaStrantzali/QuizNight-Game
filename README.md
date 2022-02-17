@@ -4,7 +4,7 @@
 <sub>*Created using* [Am I Responsive](http://ami.responsivedesign.is/)</sub>
 <br>
 
-The Quiz Night Game is a fun quiz game. The game objective is to answer in 10 question before the time runs out. This game is a great brain training tool, which can help the user to improve or test their general knowledge and get better at trivia while having fun. 
+Quiz Night Game is a fun quiz game, the goal of which is to answer correctly as many questions as possible before time runs out. This game is a great brain training tool, which can help the user to improve or test their general knowledge and get better at trivia while having fun. 
 
 The Quiz Night Game website consists of three webpages and one modal created using [HTML5](http://en.wikipedia.org/wiki/HTML5), 
 [CSS3](http://en.wikipedia.org/wiki/CSS), the library [Bootstrap](https://getbootstrap.com/), [JavaScript](https://en.wikipedia.org/wiki/JavaScript), 
@@ -233,7 +233,7 @@ Also I used Bootstrap as the main framework to keep the project responsive.
     - Used to validate CSS from erros and warnings. 
 - [JavaScript Validator](https://jshint.com/)
     - Used to detect errors, bugs and problems in Javascript.
-- * [The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
+- [The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
 
 
 ## Testing
@@ -360,4 +360,56 @@ As the owner of the Quiz Night Game:
 <br>
 &#9745; I want to provide to users additional social links where they can find more information and get connected with other fans. 
 <img src="documentation/testing/site-owner04.png"/>
+
+### Bugs
+
+#### Remaining Issues
+
+
+##### back to [top](#table-of-contents)
+---
+
+## Deployment
+
+This project is hosted on [GitHub Pages](https://pages.github.com/)
+
+### Deployment Procedure Followed:
+
+In your Repository section, select the Repository you wish to deploy.
+
+1) In Repository section on my [Github](https://github.com/) I selected the *Quiz Night Game* repository from the repositories list located 
+in the top left-hand corner of the screen.
+2) In the top horizontal Menu, I located and click the Settings link.
+3) In the Setting Page, after scrolling dow halfway the **GitHub Pages** heading revealed.
+4) Under Source, the None tab selected and then "Master" clicked and saved.
+5) The following message "Your site is ready to be published at (Link to the GitHub Page Web Address)" showed up and the site deployed. I
 <br>
+
+### To clone the repository:
+
+1) Log in to [Github](https://github.com/).
+2) Find the GitHub Repository.
+3) Select the Code button located above the repository files.
+4) Select 'HTTPS' below the heading Clone.
+5) Click the image of a clipboard and copy the address. 
+6) Open your local IDE.
+7) Navigate to the directory.
+8) Paste in the copied address and type git clone and then a space.  
+9) To create the clone, press Enter.  
+    
+<br>
+##### back to [top](#table-of-contents)
+---
+
+## Credits
+
+### Content
+The [Boostrap Modal component](https://getbootstrap.com/docs/5.0/components/modal/).
+The [Boostrap Navbar](https://getbootstrap.com/docs/5.0/components/navbar/).
+[Fisher-Yates Shuffle Algorithm](https://www.techiedelight.com/shuffle-given-array-elements-fisher-yates-shuffle/)
+[Quiz Sound MP3 from ZapSplat](https://www.zapsplat.com/music/iq-test-a-repetitive-music-bed-with-an-intelligent-feel-ideal-for-quiz-shows/)
+[The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
+
+### Image
+
+Logo picture has been taked from [Pixabay](https://pixabay.com/vectors/quiz-night-quiz-night-lights-text-2191229/)
