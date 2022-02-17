@@ -92,7 +92,7 @@ function clickButtonsListener(event) {
       
     setTimeout (() =>{
         
-        event.target.style.backgroundColor = "white";
+        event.target.style.backgroundColor = "#F6F3E8ff";
         event.target.style.color="#1D3461";
         round++; 
         displayApiData();
