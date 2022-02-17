@@ -33,12 +33,6 @@ let interval = setInterval(function() {
     }, 
     1000
 ); 
-
-//Activate sound
-$("#audio").click(function() {
-      toggleAudio();
-});
-
 //Fetch API, store it in a variable using an asyncronous function and save its values to local Storage
 async function sendApiRequest(){
     let response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
@@ -115,16 +109,5 @@ function countQuestions(){
         }, 2000);         
     }   
 }
-// Toggle the Audio on and off
-function toggleAudio() {
-    let myAudio = document.getElementById("myAudio");
-    const icon = $('.iconChanged');
-    if(icon.hasClass("fa-volume-up")){
-        myAudio.pause();
-        icon.removeClass('fa-volume-up').addClass('fa-volume-mute');
-    } else{
-        myAudio.play();
-        icon.addClass('fa-volume-up').removeClass('fa-volume-mute');
-    }
-}
+
 
