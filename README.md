@@ -271,9 +271,93 @@ Initially the site received a 90% rating on performance, due to the size of the 
 
 New aria-labels added to buttons and link so they clearly describe the action, image was compressed using an online image compressor site, [Optimizilla](https://imagecompressor.com) and then uploaded to the site. As a result, the subsequent test results showed marked improvement.
 
-<img src="documentation/testing/second-lighthouse-score.png"/>
+<img src="documentation/testing/second-lighthouse-better-score.png"/>
 
 ##### back to [top](#table-of-contents)
 ---
 
 ### Responsiveness
+
+Responsiveness tested  across different screen sizes and browsers. More specifically, Dev Tools used to emulate the following devices:
+
+
+**Mobile Devices**
+
+- Galaxy S5
+- Galaxy S9
+- iPhone 5/SE
+- iPhone 6/7/8
+- iPhone 6/7/8 plus
+- iPhone X / XS
+
+
+**Tablet Devices**
+- iPad
+- iPad Pro
+
+**Browsers**
+- Google Chrome
+- Microsoft Edge
+- Microsoft Opera
+- Mozilla Firefox
+
+
+
+##### back to [top](#table-of-contents)
+---
+
+### Tested User Stories
+
+As a new user:
+
+&#9745; Before I start the quiz game I would like to be intuitively aware of the instructions and rules. 
+
+<img src="documentation/testing/user-stories-testing01.png"/>
+<br>
+&#9745; I would like to play a quiz game presented in a visually appealing design and I can choose the category I'm most interested in playing.
+The quiz game is presented in a visually appealing design, having a high level of accessibility and performance and responds to different screens.
+Instead of different question categories, only one category is availiable for the user to select and play. This feature is to be implemeneted in the future due to the lack of time for to submit the project.
+<img src="documentation/testing/user-stories-testing02.png"/>
+<br>
+
+&#9745; I would like to select an answer and receive the correct or incorrect result with a visual response. 
+<img src="documentation/testing/user-stories-testing03.png"/>
+<br>
+- As a first time user I would like to intuitively navigate through the site with ease.
+<img src="documentation/testing/user-stories-testing04.png"/>
+
+
+#### Returning User
+
+As a returning user:
+
+&#9745; I would like to be updated about how I am progressing in the game and be able to check my score.
+<img src="documentation/testing/returning-user01.png"/>
+<br>
+&#9745; I would like to be exposed to different questions and improve my knowledge on different topics.
+<img src="documentation/testing/returning-user02.png"/>
+<br>
+&#9745; I would like to be notified if I have past the time limit or lost. 
+<img src="documentation/testing/returning-user03.png"/>
+<br>
+&#9745; I would like to modify settings such as toggling  the game audio on and off.
+<p float="left">
+<img src="documentation/testing/returning-user04.png"/>
+<img src="documentation/testing/returning-user4.png"/>
+</p>
+<br>
+
+
+#### Site Owner
+As the owner of the Quiz Night Game:
+
+&#9745; I want to provide the users a fun, enjoyable playing experience. 
+<br>
+&#9745; I want to provide feedback to users as they progress throughout the game.
+<img src="documentation/testing/site-owner02.png"/>
+<br>
+&#9745; I want to provide to users a simple site to navigate and easy to use. 
+<br>
+&#9745; I want to provide to users additional social links where they can find more information and get connected with other fans. 
+<img src="documentation/testing/site-owner04.png"/>
+<br>
