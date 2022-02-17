@@ -25,23 +25,21 @@ window.onload = sendApiRequest;
 let time = 90;
 let interval = setInterval(function() {
     document.getElementById('timeCounter').innerHTML = `${String(Math.trunc(time / 60)).padStart(2,0)}:${String(time % 60).padStart(2,0)}`;
-        //document.getElementById('timeCounter').innerHTML=String(time).padStart(2,0);
         time--;
         if (time === 0){
         clearInterval(interval);
-        $("#exampleModal").modal('show');  
+        $("#gameOver-Modal").modal('show');  
         }
     }, 
     1000
 ); 
 
-//activate sound
+//Activate sound
 $("#audio").click(function() {
       toggleAudio();
 });
 
-
-//fetch API, store it in a variable using an asyncronous function and save its values to local Storage
+//Fetch API, store it in a variable using an asyncronous function and save its values to local Storage
 async function sendApiRequest(){
     let response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
     data = await response.json();
@@ -50,8 +48,7 @@ async function sendApiRequest(){
         return {question: el.question, correct: el.correct_answer};
     });
     localStorage.setItem("getAnswers",JSON.stringify(getAnswers));
-    
-    displayApiData();  
+     displayApiData();  
 }
 
 //Display answers on HTML buttons
@@ -76,14 +73,10 @@ function shuffle(array) {
       [array[currentIndex], array[randomIndex]] = [
         array[randomIndex], array[currentIndex]];
     }
-  
     return array;
   }
-// for each answer when it's clicked check if the value is correct and change
-// the background color, increase the score, go to the next question
-
-
-
+/*For each answer when it's clicked check if the value is correct and change the background color, 
+increase the score and go to the next question */
 function clickButtonsListener(event) {
     if(!answerClicked) {
         return;
@@ -103,14 +96,14 @@ function clickButtonsListener(event) {
         event.target.style.color="#1D3461";
         round++; 
         displayApiData();
-        answerClicked = true
+        answerClicked = true;
         countQuestions();
     }, 2000);    
 }
 
-// When questions get to 10 finish the game and send the results to the results page
+// When questions get to 10 finish the game and send the results to the results page.
 function countQuestions(){
-    questionNum++
+    questionNum++;
     questionCounter.innerText = questionNum;
     if(questionNum === 10) {
         setTimeout (() =>{
@@ -122,17 +115,16 @@ function countQuestions(){
         }, 2000);         
     }   
 }
-// toggle the Audio on and off
+// Toggle the Audio on and off
 function toggleAudio() {
     let myAudio = document.getElementById("myAudio");
-    const ele = $('.iconChanged');
-    console.log(ele);
-    if(ele.hasClass("fa-volume-up")){
+    const icon = $('.iconChanged');
+    if(icon.hasClass("fa-volume-up")){
         myAudio.pause();
-        ele.removeClass('fa-volume-up').addClass('fa-volume-mute')
+        icon.removeClass('fa-volume-up').addClass('fa-volume-mute');
     } else{
         myAudio.play();
-        ele.addClass('fa-volume-up').removeClass('fa-volume-mute')
+        icon.addClass('fa-volume-up').removeClass('fa-volume-mute');
     }
 }
 

@@ -1,22 +1,18 @@
-    //get and display the score
+    //Retrieve data and display the score
     const recentScore = localStorage.getItem(`recentScore`);
-    const finalScore = document.querySelector(`#quiz-finalscore`);
+    const finalScore = document.querySelector("#quiz-finalscore");
     finalScore.innerText = recentScore;
     // retrieve answers
     const userAnswers = localStorage.getItem("userAnswers");
     const userChoices = JSON.parse(userAnswers);
-  
-  
     //retrieve questions-correct_answers and display them
     const data = localStorage.getItem(`getAnswers`);
-    let getAnswers = []
+    let getAnswers = [];
     if (data) {
         getAnswers = JSON.parse(data);
     }
-    console.log(getAnswers);
-    
-
-  //build a table and display the data
+   
+  //Build a table and display the data
     let myTable = document.querySelector('#table');
   
     let headers = ['Question', 'Correct Answer', 'User Choice'];
@@ -36,25 +32,23 @@
         let cell1 = document.createElement('td');
         let cell2 = document.createElement('td');
         let cell3 = document.createElement('td');
-
         
         cell1.innerHTML = obj.question;
         cell2.innerHTML= obj.correct;
         cell3.innerHTML = userChoices[i];
-
+//Find the correct answers and turn them green
         if (cell2.innerHTML !== cell3.innerHTML ){
-            cell3.style.background = "#CE3854ff"
+            cell3.style.background = "#CE3854ff";
         } else {
-            cell3.style.background = "green"
+            cell3.style.background = "green";
         }
-        
         objRow.appendChild(cell1);
         objRow.appendChild(cell2);
         objRow.appendChild(cell3);
 
         table.appendChild(objRow);
         
-    })
+    });
     
     myTable.appendChild(table);
-    myTable.classList.add("table table-striped");
+   

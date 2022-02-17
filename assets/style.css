@@ -222,7 +222,7 @@ margin: 0px 25px;
   font-family:'Permanent Marker', cursive;
   background-color: #CE3854ff;
   color:#F6F3E8ff;
-  height:5vh;
+  height:25vh;
   margin-top: -10px;
 }
 .results-page{
@@ -289,6 +289,10 @@ table td {
     height: 7vh;
     font-size: 20px;
   }
+  .result-section{
+    height:18vh;
+   
+  }
   
 }
 @media only screen and (min-width: 1200px){
@@ -305,9 +309,13 @@ table td {
     height: 27vh;
   }
   .answers{
-    height: 10vh;
-    padding: 10px;
+    height: 12vh;
+    margin-top:5px;
     font-size: 20px;
+  }
+  .result-section{
+    height:25vh;
+   
   }
 }
 
