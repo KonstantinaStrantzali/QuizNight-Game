@@ -10,7 +10,7 @@ The Quiz Night Game website consists of three webpages and a modal created using
 [CSS3](http://en.wikipedia.org/wiki/CSS), the library [Bootstrap](https://getbootstrap.com/), [JavaScript](https://en.wikipedia.org/wiki/JavaScript), 
 the JavaScript library [jQuery](https://jquery.com/) and [Open Trivia API](https://opentdb.com/api_config.php).  This project is part of the Full Stack Web Development Program at the [Code Institue](https://codeinstitute.net/) and was created to practically show  my learning and understanding of the Interactive Frontend Development module. 
 
-Click <a href="">here</a> to play the game online.
+Click <a href="https://konstantinastrantzali.github.io/QuizNight-Game/">here</a> to play the game online.
 <br>
 
 ## **Table of Contents**
@@ -86,7 +86,7 @@ As the owner of the Quiz Night Game:
 ### 1 Strategy Plane
 
 The creation of User Stories influenced the User Centered Design process, as many decisions were made regarding the game's layout, features and design.
-The main goal of the game app is to provide users with a fun and enjoyable game experience. The target audience of the game are fan of quizzes of any adult age, who want to have fun playing an entertaining game while exercising their brain.
+The main goal of the game App is to provide users with a fun and enjoyable game experience. The target audience of the game are fan of quizzes of any adult age, who want to have fun playing an entertaining game while exercising their brain.
 
 The design of the site has been done in a classic quizzes format, with a simple display of questions and answers and vivid colors were chosen to satisfy the fun mood of the user.
 <br>
@@ -181,12 +181,16 @@ Results remained exactly the way designed in the Wireframes.
 #### Design
 
 #### Colour Scheme
+<p align="center">
+<img src="assets/logo.png" width="50%"/>
+</p>
 
-![alt text](documentation/assets/logo.png)
+The colour scheme of the website was chosen by uploading Quiz Night Game image to [Coolors](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). Using the color picker, the hexidecimal equivalent colours of the image were identified and chosed for the project.At first a different colour pallete was chosen but going further with the project it seemed very shouting and loud color schemed thus it changed.
 
-The colour scheme of the website was chosen by uploading Quiz Night Game image to 
-[coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). Using the color picker, the hexidecimal equivalent colours of the image were identified and chosed for the project.At first a different colour pallete was chosen but going further with the project it seemed very shouting and loud color schemed thus it changed.
-![alt text](documentation/pallete-image.png)
+<p align="center">
+<img src="documentation/pallete-image.png" width="50%"/>
+</p>
+
 
 #### Typography
 *'Permanent Marker'* was chosen as the main heading font, as it's engaging and fun and can stand out in contrast to second font family used across the project. 
@@ -216,7 +220,7 @@ Also I used Bootstrap as the main framework to keep the project responsive.
     - Primary method for testing, debbuging and fixing issues.
 - [Coolors](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). 
     - Used to find a suitable colour scheme for the site.
-- [ZapSplat]
+- [ZapSplat](https://www.zapsplat.com/music/iq-test-a-repetitive-music-bed-with-an-intelligent-feel-ideal-for-quiz-shows/).
    - Used to search for the sound effect of the project.
 - [Github](https://github.com/)
     - Used to to host the deployed site.
@@ -237,23 +241,26 @@ Also I used Bootstrap as the main framework to keep the project responsive.
 
 ## Testing
 Code was checked by [W3C Markup Validation Service](https://validator.w3.org/) and ensured that the website contains valid HTML. As a result of this process the site has no HTML erros.
-
-  <img src="documentation/validation/home-page-HTML-Validation.png"/>
+<p align="center">
+  <img src="documentation/validation/home-page-HTML-Validation.png" width="70%" />
+  </p>
   
 - [View quiz-page Validation results](documentation/validation/quiz-page-HTML-validation.png)
 - [View results-page Validation results](documentation/validation/results-HTML-validation.png)
-  
+
+</br>
 
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) checked CSS code and tested how valid code contained. As a result of this process the all the bugs fixed and the file returned no erros.
-
- <img src="documentation/validation/CSS-validation.png"/>
-
+<p align="center">
+ <img src="documentation/validation/CSS-validation.png" width="70%"/>
+</p>
 To test the validity of the JavaScript  I used [JSHint](jshint.com).
 When I first parsed my code through JShint came with many errors. Most of them were corrected with the use of /*jshint esversion: 6 */  and /*jshint esversion: 8 */ as well as /*globals $:false */ for jQuery dollar sign. Also I had many missing semi-colons and syntactical errors.
-<img src="documentation/validation/quiz.js-JHint-results.png"/>
 
--[View results.js Validation](documentation/validation/JSHint-resutls.png).
-<br> 
+<p align="center">
+<img src="documentation/validation/JSHint-resutls.png" width="80%"/>).
+</p>
+    <br> 
 
 ##### back to [top](#table-of-contents)
 ---
@@ -262,11 +269,15 @@ When I first parsed my code through JShint came with many errors. Most of them w
 
 The website was tested using the [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) Lighthouse test. 
 Initially the site received a 90% rating on performance, due to the size of the images and 89% on accessibility due to inaccessible button names and non discernible names of the links.
-<img src="documentation/testing/first-lighthouse-score.png"/>
+<p align="center">
+<img src="documentation/testing/first-lighthouse-score.png" width="60%"/>
+</p>
+New aria-labels added to buttons and link so they clearly describe the action, image was compressed by Optimizilla, an online image compressor site and then uploaded to the site. As a result, the subsequent test results showed marked improvement.
 
-New aria-labels added to buttons and link so they clearly describe the action, image was compressed using an online image compressor site, [Optimizilla](https://imagecompressor.com) and then uploaded to the site. As a result, the subsequent test results showed marked improvement.
+<p align="center">
+<img src="documentation/testing/second-lighthouse-better-score.png" width="60%"/>
+</p>
 
-<img src="documentation/testing/second-lighthouse-better-score.png"/>
 
 ##### back to [top](#table-of-contents)
 ---
@@ -305,37 +316,49 @@ Responsiveness tested  across different screen sizes and browsers. More specific
 As a new user:
 
 &#9745; Before I start the quiz game I would like to be intuitively aware of the instructions and rules. 
-
+<p align="center">
 <img src="documentation/testing/user-stories-testing01.png"/>
+</p>
 <br>
 &#9745; I would like to play a quiz game presented in a visually appealing design and I can choose the category I'm most interested in playing.
 The quiz game is presented in a visually appealing design, having a high level of accessibility and performance and responds to different screens.
 Instead of different question categories, only one category is availiable for the user to select and play. This feature is to be implemeneted in the future due to the lack of time for to submit the project.
-<img src="documentation/testing/user-stories-testing02.png"/>
+<p align="center">
+<img src="documentation/testing/user-stories-testing02.png" width="60%"/>
+ </p>
 <br>
 
 &#9745; I would like to select an answer and receive the correct or incorrect result with a visual response. 
-<img src="documentation/testing/user-stories-testing03.png"/>
+<p align="center">
+<img src="documentation/testing/user-stories-testing03.png"width="60%"/>
+ </p>
 <br>
-- As a first time user I would like to intuitively navigate through the site with ease.
-<img src="documentation/testing/user-stories-testing04.png"/>
-
+&#9745; As a first time user I would like to intuitively navigate through the site with ease.
+ <p align="center">
+<img src="documentation/testing/user-stories-testing04.png" width="60%"/>
+</p>
 
 #### Returning User
 
 As a returning user:
 
 &#9745; I would like to be updated about how I am progressing in the game and be able to check my score.
-<img src="documentation/testing/returning-user01.png"/>
+<p align="center">
+<img src="documentation/testing/returning-user01.png" width="60%"/>
+    </p>
 <br>
 &#9745; I would like to be exposed to different questions and improve my knowledge on different topics.
-<img src="documentation/testing/returning-user02.png"/>
+<p align="center">
+<img src="documentation/testing/returning-user02.png" width="60%"/>
+    </p>
 <br>
 &#9745; I would like to be notified if I have past the time limit or lost. 
-<img src="documentation/testing/returning-user03.png"/>
+<p align="center">
+<img src="documentation/testing/returning-user03.png" width="60%"/>
+    </p>
 <br>
 &#9745; I would like to modify settings such as toggling  the game audio on and off.
-<p float="left">
+<p align="center">
 <img src="documentation/testing/returning-user04.png"/>
 <img src="documentation/testing/returning-user4.png"/>
 </p>
@@ -348,25 +371,30 @@ As the owner of the Quiz Night Game:
 &#9745; I want to provide the users a fun, enjoyable playing experience. 
 <br>
 &#9745; I want to provide feedback to users as they progress throughout the game.
-<img src="documentation/testing/site-owner02.png"/>
+<p align="center">
+<img src="documentation/testing/site-owner02.png" width="60%"/>
+    </p>
 <br>
 &#9745; I want to provide to users a simple site to navigate and easy to use. 
 <br>
 &#9745; I want to provide to users additional social links where they can find more information and get connected with other fans. 
+<p align="center">
 <img src="documentation/testing/site-owner04.png"/>
+</p>
 
+</br>
 ### Bugs
 A bug that took me a long time to fix was that the API data was not displaying properly, as some specific characters did not appear to be recognized. As you can see in the example below, in question 6 there are &#039:s characters that replace the apostrophe ('). After a lot of research, I discovered that instead of displaying the data using .createTextNode I had to change it to .innerHTML which allows everything to be read and replaced in a given DOM component.
-
-<img src="documentation/validation/javascript-bug.png"/>
+<p align="center">
+<img src="documentation/validation/javascript-bug.png"/width="70%">
+</p>
 <br>
 Another error came from the toogle audio function that was placed in the Javascript script of the quiz and contained all the code related to the quiz game. The index.html page was linked to the same script for the sole purpose of accessing the toogle audio feature, and this caused many errors on the console. To fix this error I created a new sound.js file and linked the two pages to it.
 
 #### Remaining Issues
 All quiz questions are retrieved from the Open Trivia API and appear randomly in the quiz. As a result, we do not know exactly the length of the questions and answers and we do not know exactly how much space needs to be displayed on the answer buttons and the question panel. For this reason, the content often looks uneven with the size of the element or in rare cases exceeds its width.
-
-<p float="left">
-<img src="documentation/testing/bug02-example2.png"/>
+<p align="center">
+<img src="documentation/testing/bug02-example2.png" />
 <img src="documentation/testing/bug02-example1.png"/>
 </p>
 
@@ -411,7 +439,7 @@ in the top left-hand corner of the screen.
 ### Content
 - The [Boostrap Modal component](https://getbootstrap.com/docs/5.0/components/modal/).
 - The [Boostrap Navbar](https://getbootstrap.com/docs/5.0/components/navbar/).
-- [Fisher-Yates Shuffle Algorithm](https://www.techiedelight.com/shuffle-given-array-elements-fisher-yates-shuffle/)
+- [Fisher-Yates Shuffle Algorithm](https://www.techiedelight.com/shuffle-given-array-elements-fisher-yates-shuffle/). Thanks to his solution I managed to shuffle my answers and display them randomly on my HTML buttons.
 - [Quiz Sound MP3 from ZapSplat](https://www.zapsplat.com/music/iq-test-a-repetitive-music-bed-with-an-intelligent-feel-ideal-for-quiz-shows/)
 - [The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
 
