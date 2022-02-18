@@ -6,7 +6,7 @@
 
 Quiz Night Game is a fun quiz game, the goal of which is to answer correctly as many questions as possible before time runs out. This game is a great brain training tool, which can help the user to improve or test their general knowledge and get better at trivia while having fun. 
 
-The Quiz Night Game website consists of three webpages and one modal created using [HTML5](http://en.wikipedia.org/wiki/HTML5), 
+The Quiz Night Game website consists of three webpages and a modal created using [HTML5](http://en.wikipedia.org/wiki/HTML5), 
 [CSS3](http://en.wikipedia.org/wiki/CSS), the library [Bootstrap](https://getbootstrap.com/), [JavaScript](https://en.wikipedia.org/wiki/JavaScript), 
 the JavaScript library [jQuery](https://jquery.com/) and [Open Trivia API](https://opentdb.com/api_config.php).  This project is part of the Full Stack Web Development Program at the [Code Institue](https://codeinstitute.net/) and was created to practically show  my learning and understanding of the Interactive Frontend Development module. 
 
@@ -39,8 +39,7 @@ Click <a href="">here</a> to play the game online.
 5. [**Deployment**](#deployment)
 6. [**Credits**](#credits)
     - [Content](#content)
-    - [Media](#media)
-    - [Acknowledgements](#acknowledgements)
+   
 
 <br>
 
@@ -87,16 +86,16 @@ As the owner of the Quiz Night Game:
 ### 1 Strategy Plane
 
 The creation of User Stories influenced the User Centered Design process, as many decisions were made regarding the game's layout, features and design.
-The main goal of the app game is to provide users with a fun, enjoyable and engaging game experience. The target audience of the game are fan of quizzes of any adult age, who want to have fun playing an entertaining game while exercising their brain.
+The main goal of the game app is to provide users with a fun and enjoyable game experience. The target audience of the game are fan of quizzes of any adult age, who want to have fun playing an entertaining game while exercising their brain.
 
-The design of the site has been made on classic quiz format, by simply displaying the questions and answers and vivid colors have been choosen to satisfy the user's fun mood.
+The design of the site has been done in a classic quizzes format, with a simple display of questions and answers and vivid colors were chosen to satisfy the fun mood of the user.
 <br>
 
 ##### back to [top](#table-of-contents)
 
 ### 2 Scope Plane
 
-The specific requirements and the fuctionality the game will offer is that the user should be able to:
+The specific requirements and the fuctionality the game offers is that the user should be able to:
 
 - Start a game.
 - Read the instructions of the game.
@@ -112,7 +111,7 @@ The specific requirements and the fuctionality the game will offer is that the u
 
 ### 3 Structure Plane
 
-After doing some research and visiting other quiz game websites, some new user needs were identified and some new features were chosen to apply. At this point the users should be able to:
+After some research and visits to other quiz game sites, some new user needs were identified and some new features were selected for the application. At this point users should be able to:
 
 - See all the questions, the correct answers and the choices they made at the end of the game.
 - Mute and unmute the sound effects.
@@ -150,6 +149,7 @@ After doing some research and visiting other quiz game websites, some new user n
 [Balsamiq](https://balsamiq.com/), is the UI wireframing tool that was used to create wireframes for each site page as it would appear on different screens such as desktop, mobile and ipad.
 
 #### Wireframes
+
 ### Home Page
 
 The home page remained exactly the same as designed in the Wireframes for all the screen sizes, desktop, mobile and ipad. 
@@ -185,8 +185,7 @@ Results remained exactly the way designed in the Wireframes.
 ![alt text](documentation/assets/logo.png)
 
 The colour scheme of the website was chosen by uploading Quiz Night Game image to 
-[coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). Using the color picker, the hexidecimal equivalent colours of the image were identified and chosed for the project.
-At the beginning a different colour pallete chosed but going further with the project it looked very shouting and loud color schemed thus it changed.
+[coolors.co](https://coolors.co/ffbe0b-fb5607-ff006e-8338ec-3a86ff). Using the color picker, the hexidecimal equivalent colours of the image were identified and chosed for the project.At first a different colour pallete was chosen but going further with the project it seemed very shouting and loud color schemed thus it changed.
 ![alt text](documentation/pallete-image.png)
 
 #### Typography
@@ -255,11 +254,7 @@ When I first parsed my code through JShint came with many errors. Most of them w
 
 -[View results.js Validation](documentation/validation/JSHint-resutls.png).
 <br> 
-Another bug that took me a long time to fix was that the API data was not displaying properly, as some specific characters did not appear to be recognized. As you can see in the example below, in question 6 there are &#039:s characters that replace the apostrophe ('). After a lot of research, I discovered that I had to display the data using .innerHTML which allows everything to be read and replaced in a given DOM component instead of the .createTextNode I used in the beginning.
 
-<img src="documentation/validation/javascript-bug.png"/>
-
-<br>
 ##### back to [top](#table-of-contents)
 ---
 
@@ -279,7 +274,6 @@ New aria-labels added to buttons and link so they clearly describe the action, i
 ### Responsiveness
 
 Responsiveness tested  across different screen sizes and browsers. More specifically, Dev Tools used to emulate the following devices:
-
 
 **Mobile Devices**
 
@@ -362,8 +356,19 @@ As the owner of the Quiz Night Game:
 <img src="documentation/testing/site-owner04.png"/>
 
 ### Bugs
+A bug that took me a long time to fix was that the API data was not displaying properly, as some specific characters did not appear to be recognized. As you can see in the example below, in question 6 there are &#039:s characters that replace the apostrophe ('). After a lot of research, I discovered that instead of displaying the data using .createTextNode I had to change it to .innerHTML which allows everything to be read and replaced in a given DOM component.
+
+<img src="documentation/validation/javascript-bug.png"/>
+<br>
+Another error came from the toogle audio function that was placed in the Javascript script of the quiz and contained all the code related to the quiz game. The index.html page was linked to the same script for the sole purpose of accessing the toogle audio feature, and this caused many errors on the console. To fix this error I created a new sound.js file and linked the two pages to it.
 
 #### Remaining Issues
+All quiz questions are retrieved from the Open Trivia API and appear randomly in the quiz. As a result, we do not know exactly the length of the questions and answers and we do not know exactly how much space needs to be displayed on the answer buttons and the question panel. For this reason, the content often looks uneven with the size of the element or in rare cases exceeds its width.
+
+<p float="left">
+<img src="documentation/testing/bug02-example2.png"/>
+<img src="documentation/testing/bug02-example1.png"/>
+</p>
 
 
 ##### back to [top](#table-of-contents)
@@ -397,19 +402,18 @@ in the top left-hand corner of the screen.
 8) Paste in the copied address and type git clone and then a space.  
 9) To create the clone, press Enter.  
     
-<br>
+
 ##### back to [top](#table-of-contents)
 ---
 
 ## Credits
 
 ### Content
-The [Boostrap Modal component](https://getbootstrap.com/docs/5.0/components/modal/).
-The [Boostrap Navbar](https://getbootstrap.com/docs/5.0/components/navbar/).
-[Fisher-Yates Shuffle Algorithm](https://www.techiedelight.com/shuffle-given-array-elements-fisher-yates-shuffle/)
-[Quiz Sound MP3 from ZapSplat](https://www.zapsplat.com/music/iq-test-a-repetitive-music-bed-with-an-intelligent-feel-ideal-for-quiz-shows/)
-[The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
+- The [Boostrap Modal component](https://getbootstrap.com/docs/5.0/components/modal/).
+- The [Boostrap Navbar](https://getbootstrap.com/docs/5.0/components/navbar/).
+- [Fisher-Yates Shuffle Algorithm](https://www.techiedelight.com/shuffle-given-array-elements-fisher-yates-shuffle/)
+- [Quiz Sound MP3 from ZapSplat](https://www.zapsplat.com/music/iq-test-a-repetitive-music-bed-with-an-intelligent-feel-ideal-for-quiz-shows/)
+- [The Open Trivia API](https://opentdb.com/api_config.php). Used to source the questions and answers of the quiz.
 
 ### Image
-
-Logo picture has been taked from [Pixabay](https://pixabay.com/vectors/quiz-night-quiz-night-lights-text-2191229/)
+- Logo picture has been taked from [Pixabay](https://pixabay.com/vectors/quiz-night-quiz-night-lights-text-2191229/)
