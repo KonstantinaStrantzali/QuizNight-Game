@@ -214,8 +214,12 @@ cursor: pointer;
   color: #294A58ff;
   font-family:'Permanent Marker', cursive;
 }
-.modal-button{
-margin: 0px 25px;
+
+#button-tryAgain{
+  width: 40%;
+}
+#button-home{
+  width: 40%;
 }
 /* --------------------------------------------> results page */
 .result-section{
