@@ -106,14 +106,14 @@ color:#294A58ff ;
 
   .fa-facebook {
     background-color: #3B5998;
-    color: #D9D0C5ff;
+    color: #F6F3E8ff;
   }
   .fa-youtube {
-    background: #D9D0C5ff;
+    background: #F6F3E8ff;
     color: rgb(209, 17, 17);
   }
   .fa-instagram{
-    background: #D9D0C5ff;;
+    background: #F6F3E8ff;
     color: rgb(145, 6, 138);
   }
   .list-inline-item a i:hover {
@@ -314,8 +314,9 @@ table td {
   }
   .answers{
     height: 12vh;
-    margin-top:5px;
     font-size: 20px;
+    padding-top:20px ;
+
   }
   .result-section{
     height:25vh;
