@@ -7,8 +7,6 @@ const answer3 = document.getElementById("option3");
 const answer4 = document.getElementById("option4");
 const quizAnswers = document.getElementsByClassName("answers");
 const scoreCounter = document.getElementById("scoreCounter");
-const audioElm = document.getElementById('myAudio'); 
-audioElm.muted = !audioElm.muted;
 const questionCounter = document.getElementById("questionCounter");
 let data;
 let round = 0;

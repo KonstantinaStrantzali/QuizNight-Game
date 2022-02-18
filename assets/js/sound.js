@@ -1,3 +1,5 @@
+const audioElm = document.getElementById('myAudio'); 
+audioElm.muted = !audioElm.muted;
 
 //Activate sound
 $("#audio").click(function() {
